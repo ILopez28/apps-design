@@ -8,8 +8,8 @@ export default function App() {
     <WebView
       source={{uri: 'https://nostalgic-spence-0af637.netlify.app/'}}
       style={{ marginTop: '10%'}}
-      sharedCookiesEnabled={True}
-      thirdPartyCookiesEnabled={True}
+      sharedCookiesEnabled={true}
+      thirdPartyCookiesEnabled={true}
     />
   );
 }
