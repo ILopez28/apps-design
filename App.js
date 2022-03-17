@@ -1,24 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { WebView } from 'react-native-webview'
+import "react-native-gesture-handler"
+import {NavigationContainer} from "@react-navigation/native"
+import NavigationStack from "./src/navigation/NavigationStack"
 
 export default function App() {
   return (
-    <WebView
-      source={{uri: 'https://nostalgic-spence-0af637.netlify.app/'}}
-      style={{ marginTop: '10%'}}
-      sharedCookiesEnabled={true}
-      thirdPartyCookiesEnabled={true}
-    />
+      <NavigationContainer>
+        <NavigationStack />
+      </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
